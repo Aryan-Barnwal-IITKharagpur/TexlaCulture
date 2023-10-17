@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+body {
+  margin: 0;
+  line-height: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root {
+  /* fonts */
+  --subtitle1: "Public Sans";
+  --components-label: Poppins;
+  --font-lexend: Lexend;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  /* font sizes */
+  --body2-size: 0.88rem;
+  --subtitle1-size: 1rem;
+  --components-textfield-label-size: 0.75rem;
+  --components-chart-legend-size: 0.81rem;
+  --font-size-7xl: 1.63rem;
+  --h5-size: 1.25rem;
+  --font-size-13xl-9: 2.06rem;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  /* Colors */
+  --background-light-paper: #fff;
+  --text-light-secondary: #637381;
+  --primary-main: #008037;
+  --grey-700: #454f5b;
+  --grey-800: #212b36;
+  --grey-100: #f9fafb;
+  --grey-200: #f4f6f8;
+  --color-black: #000;
+  --color-mediumseagreen-100: #36b37e;
+  --primary-main1: #00ab55;
+  --transparent-primary-8: rgba(0, 171, 85, 0.08);
+  --transparent-primary-16: rgba(0, 171, 85, 0.16);
+  --secondary-dark: #1939b7;
+  --text-light-disabled: #919eab;
+  --components-input-outlined: rgba(145, 158, 171, 0.32);
+  --components-divider: rgba(145, 158, 171, 0.24);
+  --transparent-grey-16: rgba(145, 158, 171, 0.16);
+  --transparent-grey-48: rgba(145, 158, 171, 0.48);
+  --transparent-warning-8: rgba(255, 171, 0, 0.08);
+  --primary-dark: #006124;
+  --transparent-secondary-08: rgba(51, 102, 255, 0.08);
+  --grey-300: #dfe3e8;
+  --secondary-darker: #091a7a;
+  --error-main: #ff5630;
+  --info-dark: #006c9c;
 
-.App-link {
-  color: #61dafb;
-}
+  /* Gaps */
+  --gap-3xs: 0.63rem;
+  --gap-9xs: 0.25rem;
+  --gap-5xs: 0.5rem;
+  --gap-4xs: 0.56rem;
+  --gap-base: 1rem;
+  --gap-8xs: 0.31rem;
+  --gap-xs: 0.75rem;
+  --gap-lgi: 1.19rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* Paddings */
+  --padding-smi: 0.81rem;
+  --padding-xs: 0.75rem;
+  --padding-3xs: 0.63rem;
+  --padding-17xl: 2.25rem;
+  --padding-5xs: 0.5rem;
+  --padding-4xs: 0.56rem;
+  --padding-10xs: 0.19rem;
+  --padding-base: 1rem;
+  --padding-11xs: 0.13rem;
+  --padding-9xs: 0.25rem;
+  --padding-12xl: 1.94rem;
+  --padding-21xl: 2.5rem;
+  --padding-6xs-5: 0.41rem;
+  --padding-7xs: 0.38rem;
+  --padding-lgi-8: 1.24rem;
+  --padding-mini-8: 0.93rem;
+  --padding-3xs-9: 0.62rem;
+  --padding-8xs-7: 0.29rem;
+  --padding-5xl: 1.5rem;
+  --padding-sm: 0.88rem;
+
+  /* Border radiuses */
+  --br-base: 16px;
+  --br-4xs: 9px;
+  --br-31xl: 50px;
+  --br-7xs: 6px;
+  --br-81xl: 100px;
+  --br-2xs: 11px;
+  --br-5xs: 8px;
+  --br-lg: 18px;
+  --br-3xs: 10px;
+  --br-3xs-9: 9.9px;
+
+  /* Effects */
+  --shadows-light-z1: 0px 1px 2px rgba(145, 158, 171, 0.16);
 }
